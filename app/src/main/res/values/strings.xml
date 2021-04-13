@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dotify</string>
+    <string name="change_user_btn">CHANGE USER</string>
+    <string name="song_artist_txt">Seven Lions featuring Tove Lo, Myon, and Shane 54</string>
+    <string name="song_title_txt">Strangers</string>
+    <string name="num_plays_txt">%1$d plays</string>
+    <string name="play_button">play button</string>
+    <string name="next_button">next button</string>
+    <string name="previous_button">previous button</string>
+    <string name="image_desc">This is the cover image of an album</string>
+    <string name="apply_user_btn">APPLY</string>
+    <string name="edit_text_hint">Enter new username</string>
+</resources>
