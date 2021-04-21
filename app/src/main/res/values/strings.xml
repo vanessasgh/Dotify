@@ -10,4 +10,8 @@
     <string name="image_desc">This is the cover image of an album</string>
     <string name="apply_user_btn">APPLY</string>
     <string name="edit_text_hint">Enter new username</string>
+    <string name="artist_name_item">Artist name</string>
+    <string name="song_title_item">Title of Song</string>
+    <string name="mini_player_text">%s - %s</string>
+    <string name="shuffle">Shuffle</string>
 </resources>

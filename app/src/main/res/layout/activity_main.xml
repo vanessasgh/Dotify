@@ -73,7 +73,7 @@
         android:scaleType="centerInside"
         android:layout_gravity="center"
         android:background="@color/white"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         app:srcCompat="@drawable/strangers_cover_art"
         android:contentDescription="@string/image_desc"
         app:layout_constraintDimensionRatio="1:1"

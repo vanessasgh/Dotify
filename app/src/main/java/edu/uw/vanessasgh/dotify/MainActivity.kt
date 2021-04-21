@@ -1,5 +1,7 @@
 package edu.uw.vanessasgh.dotify
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,8 +9,21 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import android.widget.TextView
+import com.ericchee.songdataprovider.Song
 import edu.uw.vanessasgh.dotify.databinding.ActivityMainBinding
 import kotlin.random.Random
+
+private const val SONG_KEY = "song"
+
+fun navigateToSongActivity(context: Context, song: Song) = with(context) {
+    val intent = Intent(context, MainActivity::class.java).apply {
+        val bundle = Bundle().apply {
+            putParcelable(SONG_KEY, song)
+        }
+        putExtras(bundle)
+    }
+    context.startActivity(intent)
+}
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,6 +58,14 @@ class MainActivity : AppCompatActivity() {
                 binding.userChangeLayout.visibility = View.VISIBLE
 
                 editName.setText(currentName.text)
+            }
+
+            // display the content from chosen song in song list
+            val song: Song? = intent.getParcelableExtra<Song>(SONG_KEY)
+            songTitle.text = song?.title
+            songArtist.text = song?.artist
+            if (song != null) {
+                songImage.setImageResource(song.largeImageID)
             }
         }
 
