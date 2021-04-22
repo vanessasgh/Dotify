@@ -1,13 +1,13 @@
 # Your App by Vanessa Sugiharto
 
-This is an app for homework 1 that is a music player where you can click previous and next songs, click the play button and records how many times it has been clicked, and change/edit your username.
+This is an app for homework 2 that is a music player list where you can scroll through the song list. Clicking on one of the song will display a mini player with the chosen song description and a shuffle button. You can shuffle the song list by clicking that button. Clicking on the mini player will pull up the homework 1 page, which is the focused and descriptive version of that one song.
 
 ## Extra credit
-I have completed extra credit #1 which is that the user cannot apply a new username if edit text field is empty.
+None.
 
 ## Screenshots
 <img src="./emulator.jpg" alt="Screenshot of the app" height="500" />
 
 
 ## Installation & Usage
-Click the username to change the username. Click the play button to increase the number of plays. Click the previous and next button to see the pop-up for going to next or previous songs.
+Click on a song in the song list to pull up the mini player. Click the shuffle button on the mini player to shuffle the song list. Click the mini player to show that chosen song in more detail.
