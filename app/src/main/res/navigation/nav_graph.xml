@@ -9,8 +9,8 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="edu.uw.vanessasgh.dotify.SettingsFragment"
-        android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" >
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
         <action
             android:id="@+id/action_settingsFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
