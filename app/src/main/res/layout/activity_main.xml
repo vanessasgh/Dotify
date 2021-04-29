@@ -7,65 +7,14 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/userLayout"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/settings_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-    >
-        <TextView
-            android:id="@+id/username_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
-        <Button
-            android:id="@+id/change_user_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/change_user_btn"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/userChangeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:visibility="invisible"
-        >
-        <EditText
-            android:id="@+id/username_edit"
-            android:inputType="text"
-            android:autofillHints="username"
-            android:hint="@string/edit_text_hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
-        <Button
-            android:id="@+id/apply_user_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/apply_user_btn"
-            />
-    </LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/settings_txt_btn"
+        />
 
     <ImageButton
         android:id="@+id/songImage"
@@ -78,7 +27,7 @@
         android:contentDescription="@string/image_desc"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userLayout"
+        app:layout_constraintTop_toBottomOf="@id/settings_btn"
          />
 
     <TextView
@@ -145,6 +94,7 @@
             android:contentDescription="@string/play_button"
             android:onClick="playClicked"
             />
+
         <ImageButton
             android:id="@+id/nextBtn"
             android:layout_width="0dp"

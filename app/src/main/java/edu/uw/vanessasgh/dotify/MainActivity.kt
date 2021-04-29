@@ -42,23 +42,23 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater).apply { setContentView(root) }
 
         //set random number for the number of plays
-        currentPlayNumber = findViewById<TextView>(R.id.numPlays)
-        currentPlayNumber.text = getString(R.string.num_plays_txt, randomNumber)
+//        currentPlayNumber = findViewById<TextView>(R.id.numPlays)
+//        currentPlayNumber.text = getString(R.string.num_plays_txt, randomNumber)
 
         //initialize the username
-        currentName = findViewById<TextView>(R.id.username_view)
-        currentName.text = name
-        editName = findViewById<EditText>(R.id.username_edit)
-        editName.setText(currentName.text)
+//        currentName = findViewById<TextView>(R.id.username_view)
+//        currentName.text = name
+//        editName = findViewById<EditText>(R.id.username_edit)
+//        editName.setText(currentName.text)
 
         // if the change user button is pressed - make it invisible
         with(binding) {
-            changeUserBtn.setOnClickListener {
-                binding.userLayout.visibility = View.INVISIBLE
-                binding.userChangeLayout.visibility = View.VISIBLE
-
-                editName.setText(currentName.text)
-            }
+//            changeUserBtn.setOnClickListener {
+//                binding.userLayout.visibility = View.INVISIBLE
+//                binding.userChangeLayout.visibility = View.VISIBLE
+//
+//                editName.setText(currentName.text)
+//            }
 
             // display the content from chosen song in song list
             val song: Song? = intent.getParcelableExtra<Song>(SONG_KEY)
@@ -67,18 +67,40 @@ class MainActivity : AppCompatActivity() {
             if (song != null) {
                 songImage.setImageResource(song.largeImageID)
             }
-        }
 
-        binding.applyUserBtn.setOnClickListener {
-            val currentNameText = editName.getText().toString()
-            if(currentNameText == "") {
-                Toast.makeText(this, "The username cannot be a null", Toast.LENGTH_SHORT).show()
-            } else {
-                currentName.text = currentNameText
-                binding.userChangeLayout.visibility = View.INVISIBLE
-                binding.userLayout.visibility = View.VISIBLE
+
+            settingsBtn.setOnClickListener {
+                if (song != null) {
+                    navigateToSettingsActivity(this@MainActivity, song, currentNumber)
+                }
+            }
+
+            if (savedInstanceState != null) {
+                currentNumber = savedInstanceState.getInt(SONG_KEY)
+            }
+
+            currentPlayNumber = findViewById<TextView>(R.id.numPlays)
+            currentPlayNumber.text = getString(R.string.num_plays_txt, currentNumber)
+
+            playBtn.setOnClickListener {
+                val currentNum = currentNumber + 1
+                currentNumber = currentNum
+                currentPlayNumber.text = getString(R.string.num_plays_txt, currentNumber)
             }
         }
+
+//        binding.applyUserBtn.setOnClickListener {
+//            val currentNameText = editName.getText().toString()
+//            if(currentNameText == "") {
+//                Toast.makeText(this, "The username cannot be a null", Toast.LENGTH_SHORT).show()
+//            } else {
+//                currentName.text = currentNameText
+//                binding.userChangeLayout.visibility = View.INVISIBLE
+//                binding.userLayout.visibility = View.VISIBLE
+//            }
+//        }
+
+
 
     }
 
@@ -90,10 +112,15 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Skipping to next track", Toast.LENGTH_SHORT).show()
     }
 
-    fun playClicked(view: View) {
-        val currentNum = currentNumber + 1
-        currentNumber = currentNum
-        currentPlayNumber.text = getString(R.string.num_plays_txt, currentNumber)
+//    fun playClicked(view: View) {
+//        val currentNum = currentNumber + 1
+//        currentNumber = currentNum
+//        currentPlayNumber.text = getString(R.string.num_plays_txt, currentNumber)
+//    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putInt(SONG_KEY, currentNumber)
+        super.onSaveInstanceState(outState)
     }
 
 }

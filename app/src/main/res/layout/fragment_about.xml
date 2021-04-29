@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AboutFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/creatorTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/creatorTv"
+        />
+    <TextView
+        android:id="@+id/websiteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/websiteText" />
+
+    <TextView
+        android:id="@+id/versionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versionText"
+        />
+
+</LinearLayout>

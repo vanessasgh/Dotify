@@ -14,4 +14,17 @@
     <string name="song_title_item">Title of Song</string>
     <string name="mini_player_text">%s - %s</string>
     <string name="shuffle">Shuffle</string>
+    <string name="settings_txt_btn">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email: thisistest@gmail.com</string>
+    <string name="dob">Joined: 10/03/20</string>
+    <string name="favIceCream">Favorite ice cream: Chocolate</string>
+    <string name="profileName">Shiro</string>
+    <string name="profilePicDesc">Profile picture</string>
+    <string name="statsText">Play count: %1$d</string>
+    <string name="creatorTv">Creator: Vanessa Sugiharto</string>
+    <string name="websiteText">Website: vanessa-sugiharto-portfolio.webflow.io</string>
+    <string name="versionText">Version: %s</string>
 </resources>

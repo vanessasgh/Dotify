@@ -21,7 +21,7 @@
 
 <LinearLayout
     android:id="@+id/mini_player"
-    android:layout_width="match_parent"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +29,9 @@
     android:layout_margin="10dp"
     android:layout_gravity="bottom"
     android:visibility="gone"
+    tools:visibility="visible"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
 
     >
 
