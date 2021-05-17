@@ -7,10 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
+import coil.load
 import edu.uw.vanessasgh.dotify.databinding.FragmentProfileBinding
 import edu.uw.vanessasgh.dotify.model.Profile
 import kotlinx.coroutines.launch
-import java.net.URL
 
 class ProfileFragment : Fragment() {
     private lateinit var profileApp: ProfileApplication
@@ -29,8 +29,9 @@ class ProfileFragment : Fragment() {
         with(binding) {
             lifecycleScope.launch {
                 val userInfo = dataRepository.getUserInfo()
-                binding.fullnameTv.text = getString(R.string.fullname, userInfo.firstname, userInfo.lastname)
+                binding.fullnameTv.text = getString(R.string.fullname, userInfo.firstName, userInfo.lastName)
                 binding.userNameTv.text = userInfo.username
+                binding.profilePicIV.load(userInfo.profilePicURL)
             }
         }
         return binding.root

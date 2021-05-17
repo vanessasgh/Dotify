@@ -1,9 +1,9 @@
 # Your App by Vanessa Sugiharto
 
-This is an app for homework 3 that is a music player list where you can scroll through the song list. Clicking on one of the song will display a mini player with the chosen song description and a shuffle button. You can rotate the screen into horizontal and it will still keep the same state. Clicking the mini player will open up the song detail and there's a settings button. This song detail can also be rotated horizontally and it will keep the same state. Clicking the settings button will show 3 buttons: profile, statistics and about. Clicking the profile and about button will direct you to the profile and about pages. Clicking the statistics button will direct you to the statistics page that show the chosen album picture and the number of plays. You can click the back button to go back to the settings page.
+This is an app for homework 4 that is a music player list where you can scroll through the song list. The functionality that was added onto it is in the settings when an individual song is clicked on. When the setting button is clicked and the profile button is clicked afterwards, it will display the user info that is grabbed from an online source. 
 
 ## Extra credit
-1. Back button is provided on the fragment pages (besides the settings fragment)
+None
 
 ## Screenshots
 <img src="./emulator.jpg" alt="Screenshot of the app" height="500" />
