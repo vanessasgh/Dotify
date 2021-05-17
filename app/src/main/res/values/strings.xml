@@ -18,10 +18,11 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="email">Email: thisistest@gmail.com</string>
+    <string name="username">%s</string>
+    <string name="fullname">%s %s</string>
     <string name="dob">Joined: 10/03/20</string>
     <string name="favIceCream">Favorite ice cream: Chocolate</string>
-    <string name="profileName">Shiro</string>
+    <string name="profileName">%s</string>
     <string name="profilePicDesc">Profile picture</string>
     <string name="statsText">Play count: %1$d</string>
     <string name="creatorTv">Creator: Vanessa Sugiharto</string>
