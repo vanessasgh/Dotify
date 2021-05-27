@@ -35,6 +35,10 @@ class SettingsFragment : Fragment() {
             aboutBtn.setOnClickListener {
                 navController.navigate(R.id.aboutFragment)
             }
+
+            notificationBtn.setOnClickListener {
+                navController.navigate(R.id.notificationFragment)
+            }
         }
 
         return binding.root

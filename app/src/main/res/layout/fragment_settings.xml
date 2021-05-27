@@ -30,5 +30,12 @@
             android:text="About"
         />
 
+        <Button
+            android:id="@+id/notificationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            />
+
     </LinearLayout>
 </FrameLayout>

@@ -26,6 +26,9 @@
         <argument
             android:name="plays"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_settingsFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -49,4 +52,9 @@
         android:name="edu.uw.vanessasgh.dotify.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="edu.uw.vanessasgh.dotify.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
 </navigation>

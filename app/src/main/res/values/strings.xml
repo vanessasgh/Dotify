@@ -28,4 +28,9 @@
     <string name="creatorTv">Creator: Vanessa Sugiharto</string>
     <string name="websiteText">Website: vanessa-sugiharto-portfolio.webflow.io</string>
     <string name="versionText">Version: %s</string>
+    <string name="new_songs">New Songs</string>
+    <string name="new_songs_channel_description">This is a channel that notifies when a new song is released</string>
+
+    <string name="title_notif">%s just released a new song!!!</string>
+    <string name="desc_notif">Listen to %s now on Dotify</string>
 </resources>

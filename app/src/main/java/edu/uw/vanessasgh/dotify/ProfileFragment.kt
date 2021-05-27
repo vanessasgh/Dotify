@@ -9,15 +9,14 @@ import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import coil.load
 import edu.uw.vanessasgh.dotify.databinding.FragmentProfileBinding
-import edu.uw.vanessasgh.dotify.model.Profile
 import kotlinx.coroutines.launch
 
 class ProfileFragment : Fragment() {
-    private lateinit var profileApp: ProfileApplication
-    private val dataRepository by lazy { profileApp.dataRepository}
+    private lateinit var mainApp: MainApplication
+    private val dataRepository by lazy { mainApp.dataRepository}
 
     override fun onAttach(context: Context) {
-        this.profileApp = context.applicationContext as ProfileApplication
+        this.mainApp = context.applicationContext as MainApplication
         super.onAttach(context)
     }
 
